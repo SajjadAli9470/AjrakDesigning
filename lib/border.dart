@@ -32,37 +32,41 @@ class _BordersState extends State<Borders> {
                   color: Colors.white, borderRadius: BorderRadius.circular(10)),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    for (int i = 1; i <= 6; i++)
-                      InkWell(
-                        onTap: () {
-                          int id = index++;
-                          var layer = LayeredWidget(
-                              id: id,
-                              child: OverlayedWidget(
-                                  id: id,
-                                  child:
-                                      Image.asset('assets/borders/b_$i.png')));
-                          context.read<HistoryBloc>().add(add_history(
-                              history: History(
-                                border:'assets/borders/b_$i.png',
-                                selectedItem: selectedItem,
-                                  layers: layer,
-                                  backgroundColor: selectedColor,
-                                  ratio: ratio)));
-                          // setState(() {
-
-                          // });
-                        },
-                        child: Container(
-                            // color: const Color.fromARGB(255, 243, 243, 243),
-                            padding:const EdgeInsets.all(5),
-                            margin:const EdgeInsets.all(5),
-                            child: Image.asset('assets/borders/b_$i.png')),
-                      )
-                  ],
+                child: BlocBuilder<HistoryBloc, HistoryState>(
+                  builder: (context, hstate) {
+                    return Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    for (int i = 1; i <= 6; i++)
+                                      InkWell(
+                                        onTap: () {
+                                          int id = index++;
+                                          var layer = LayeredWidget(
+                                              id: id,
+                                              child: OverlayedWidget(
+                                                  id: id,
+                                                  child:
+                                                      Image.asset('assets/borders/b_$i.png')));
+                                          context.read<HistoryBloc>().add(add_history(
+                                              history: History(
+                                                border:'assets/borders/b_$i.png',
+                                                selectedItem: hstate.histroyList.last.selectedItem,
+                                                  layers: hstate.histroyList.last.layers,
+                                                  backgroundColor: hstate.histroyList.last.backgroundColor,
+                                                  ratio: hstate.histroyList.last.ratio)));
+                                          // setState(() {
+                
+                                          // });
+                                        },
+                                        child: Container(
+                                            // color: const Color.fromARGB(255, 243, 243, 243),
+                                            padding:const EdgeInsets.all(5),
+                                            margin:const EdgeInsets.all(5),
+                                            child: Image.asset('assets/borders/b_$i.png')),
+                                      )
+                                  ],
+                                );
+                  },
                 ),
               ),
             );

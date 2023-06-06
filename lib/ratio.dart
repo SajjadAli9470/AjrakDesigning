@@ -37,9 +37,9 @@ class _RatioState extends State<Ratio> {
                                  
                                    InkWell(
                                                   onTap: () {
-                                                    setState(() {
-                                                      aspect_ratio = 1 / 2;
-                                                    });
+                                                    // setState(() {
+                                                    //   aspect_ratio = 1 / 2;
+                                                    // });
                                                     
                                                     context.read<HistoryBloc>().add(add_history(
                                       history: History(layers:state.histroyList.last.layers , backgroundColor: selectedColor, ratio: aspect_ratio,matrix: state.histroyList.last.matrix,selectedItem: state.histroyList.last.selectedItem,border: state.histroyList.last.border)));
@@ -63,7 +63,7 @@ class _RatioState extends State<Ratio> {
                               InkWell(
                                 onTap: () {
                                   // setState(() {
-                                  //   aspect_ratio = 1;
+                                    aspect_ratio = 1;
                                   // });
                                  
                                                     context.read<HistoryBloc>().add(add_history(
@@ -86,7 +86,7 @@ class _RatioState extends State<Ratio> {
                               InkWell(
                                 onTap: () {
                                   // setState(() {
-                                  //   aspect_ratio = 16 / 9;
+                                    aspect_ratio = 16 / 9;
                                   // });
                                 
                                                     context.read<HistoryBloc>().add(add_history(
@@ -109,7 +109,7 @@ class _RatioState extends State<Ratio> {
                               InkWell(
                                 onTap: () {
                                   // setState(() {
-                                  //   aspect_ratio = 9 / 16;
+                                    aspect_ratio = 9 / 16;
                                   // });
                                 
                                                     context.read<HistoryBloc>().add(add_history(

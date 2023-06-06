@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "447514580514",
+    "project_id": "mobile070-b9f12",
+    "storage_bucket": "mobile070-b9f12.appspot.com"
+  },
+  "client": [
+   
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447514580514:android:e50fc710cb79c363e15c7b",
+        "android_client_info": {
+          "package_name": "com.sajjad.designajrak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447514580514-a2oc18fggi8hn920r9ov2ufthqkf6v1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBIMPAXmpt-jUo9dixrrZidxnMzBj9sXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447514580514-7sk02lvsf9up2nqo977kkdku28d3v81n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "447514580514-k78d24obh4fe5vst8d5glt93jneu2aan.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sajjad.designajrak"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447514580514:android:0ba93ca0e2d35f36e15c7b",
+        "android_client_info": {
+          "package_name": "com.sajjad070.autopilot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447514580514-a2oc18fggi8hn920r9ov2ufthqkf6v1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBIMPAXmpt-jUo9dixrrZidxnMzBj9sXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447514580514-7sk02lvsf9up2nqo977kkdku28d3v81n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "447514580514-k78d24obh4fe5vst8d5glt93jneu2aan.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sajjad.designajrak"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447514580514:android:b1b7a4ab0f286ccde15c7b",
+        "android_client_info": {
+          "package_name": "com.sajjad070.tutionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447514580514-a2oc18fggi8hn920r9ov2ufthqkf6v1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBIMPAXmpt-jUo9dixrrZidxnMzBj9sXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447514580514-7sk02lvsf9up2nqo977kkdku28d3v81n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "447514580514-k78d24obh4fe5vst8d5glt93jneu2aan.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sajjad.designajrak"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
